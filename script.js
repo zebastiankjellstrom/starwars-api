@@ -25,7 +25,8 @@ async function getFilms(films) {
     films.map(async (film) => {
         try {
             const res = await fetch(film, {
-                method: 'GET'
+                method: 'GET',
+                mode: 'cors'
             })
             const characterFilm = await res.json()
             displayFilm(characterFilm)
