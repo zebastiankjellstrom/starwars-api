@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    color: #FFC500;
+    background-color: black;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.headline {
+    margin: 4rem;
+    height: 6rem;
+    font-size: 6rem;
+}
+
+.description {
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.background-image {
+    width: 100vw;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+}
+
+
+.container {
+    margin: 10% 10%;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 20% 20% 20% auto;
+    outline-style: groove;
+    grid: none;
+}
+
+.star-wars-logo {
+    max-width: 78vw;
+}
+
+@keyframes logo {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(2.0);
+        -webkit-transform: scale(2.0);
+    }
+}
+
+.animation {
+    animation: logo 5s ease-in-out infinite alternate;
+    -webkit-animation: logo 5s ease-in-out infinite alternate;
+}
+
+.display-none {
+    display: none;
+}
+.search {
+    display: grid;
+    justify-content: center;
+    display: flex;
+}
+
+.search-button {
+    background-color: black;
+    color: #FFC500;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+:hover.search-button {
+    background-color:rgb(67, 77, 88);
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+}
+
+.character {
+    flex: 1;
+}
+
+.films {
+    flex: 1;
+}
+
+
+.footer {
+    position: fixed;
+  bottom: 0;
+}
